@@ -14,7 +14,7 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   line-height: 1.3;
-  font-size: $font-med;
+  font-size: 1.125rem;
 }
 
 a,
@@ -33,5 +33,19 @@ a:hover {
   }
   &-ai-c {
     align-items: center;
+  }
+}
+
+// Visibility
+//hide for tablet and mobile
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+//hide for desktop viewport
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
   }
 }

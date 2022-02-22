@@ -42,7 +42,8 @@ body {
           align-items: center;
 }
 
-.header {
+.header .flex {
+  padding: 24px;
   background-color: black;
   height: 80px;
 }
@@ -69,8 +70,8 @@ body {
 }
 
 .header__hamburger > span {
-  width: 20px;
-  height: 3px;
+  width: 22px;
+  height: 2px;
   background-color: white;
 }
 
@@ -79,6 +80,6 @@ body {
 }
 
 .header__hamburger > span:not(:last-child) {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 /*# sourceMappingURL=style.css.map */

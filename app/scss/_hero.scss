@@ -1,0 +1,31 @@
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .img-slider {
+    position: relative;
+    width: 100%;
+    .slide {
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      img {
+        z-index: 1;
+        width: 100%;
+        border-radius: 0px 0px 15px 15px;
+      }
+    }
+    .navigation {
+      z-index: 2;
+      position: absolute;
+      display: flex;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(50%);
+      .btn {
+        background: rgba(255, 255, 255, 0.5);
+        width: 12px;
+      }
+    }
+  }
+}

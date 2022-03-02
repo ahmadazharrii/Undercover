@@ -134,4 +134,50 @@ a:hover {
 .header__links a:hover::before {
   opacity: 1;
 }
+
+.slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-container .img-slider {
+  position: relative;
+  width: 100%;
+}
+
+.slider-container .img-slider .slide {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+}
+
+.slider-container .img-slider .slide img {
+  z-index: 1;
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.slider-container .img-slider .navigation {
+  z-index: 2;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.slider-container .img-slider .navigation .btn {
+  background: rgba(255, 255, 255, 0.5);
+  width: 12px;
+}
 /*# sourceMappingURL=style.css.map */
